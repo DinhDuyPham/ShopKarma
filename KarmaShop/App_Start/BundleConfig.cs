@@ -25,6 +25,8 @@ namespace KarmaShop
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            //Add style to bundles for public pages...
+          //  bundles.Add(new StyleBundle("~/bundles/css1").Include("");
         }
     }
 }
