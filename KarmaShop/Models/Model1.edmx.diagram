@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="81435b388b6947e1b98e1c8ecf34917a" Name="Diagram1">
+        <EntityTypeShape EntityType="shopModel.ARTICLE" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.BRAND" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.CUSTOMER" Width="1.5" PointX="3.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.LOGIN" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.ORDERDETAIL" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.ORDER" Width="1.5" PointX="6" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.PRODUCT" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.TYPE_OF_PRODUCTS" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="shopModel.FK__ARTICLES__ACCOUN__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__BRANDS__TYPE_COD__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__ORDERS__CUSTOMER__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__ORDERS__ACCOUNT__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__PRODUCTS__ACCOUN__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__ORDERDETA__ORDER__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__ORDERDETA__PRODU__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK__PRODUCTS__TYPE_C__46E78A0C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
