@@ -114,13 +114,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a class="navbar-brand" href="http://localhost:65403/Admin/DashBoard/Index"><span class="fa fa-area-chart"></span> Glance<span class="dashboard_text">ADMIN</span></a></h1>
-                    </div>
+                        <h1><a class="navbar-brand" href='@Url.Action("Index","DashBoard")'><span class="fa fa-area-chart"></span> Glance<span class="dashboard_text">ADMIN</span></a></h1>
+                    </div> 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="sidebar-menu">
                             <li class="header">MAIN NAVIGATION</li>
                             <li class="treeview">
-                                <a href="http://localhost:65403/Admin/DashBoard/Index">
+                                <a href='@Url.Action("Index","DashBoard")'>
                                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                                 </a>
                             </li>
@@ -131,8 +131,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="http://localhost:65403/Admin/Gird/Index"><i class="fa fa-angle-right"></i> Grids</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Media/Index"><i class="fa fa-angle-right"></i> Media Css</a></li>
+                                    <li><a href='@Url.Action("Index","Gird")'><i class="fa fa-angle-right"></i> Grids</a></li>
+                                    <li><a href='@Url.Action("Index","Media")'><i class="fa fa-angle-right"></i> Media Css</a></li>
                                 </ul>
                             </li>
                             
@@ -144,14 +144,16 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="http://localhost:65403/Admin/Genaral/Index"><i class="fa fa-angle-right"></i> General</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Icons/Index"><i class="fa fa-angle-right"></i> Icons</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Bottons/Index"><i class="fa fa-angle-right"></i> Buttons</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Typograbphy/Index"><i class="fa fa-angle-right"></i> Typography</a></li>
+
+                                    <li><a href='@Url.Action("Index","Genaral")'><i class="fa fa-angle-right"></i> General</a></li>
+                                    <li><a href='@Url.Action("Index","Icons")'><i class="fa fa-angle-right"></i> Icons</a></li>
+                                    <li><a href='@Url.Action("Index","Bottons")'><i class="fa fa-angle-right"></i> Buttons</a></li>
+                                    <li><a href='@Url.Action("Index","Typograbphy")'><i class="fa fa-angle-right"></i> Typography</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="http://localhost:65403/Admin/Widgets/Index">
+                              
+                                <a href='@Url.Action("Index","Widgets")'>
                                     <i class="fa fa-th"></i> <span>Widgets</span>
                                     <small class="label pull-right label-info">08</small>
                                 </a>
@@ -162,8 +164,9 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="http://localhost:65403/Admin/Forms/Index"><i class="fa fa-angle-right"></i> General Forms</a></li>
-                                    <li><a href="http://localhost:65403/Admin/validation/Index"><i class="fa fa-angle-right"></i> Form Validations</a></li>
+
+                                    <li><a href='@Url.Action("Index","Forms")'><i class="fa fa-angle-right"></i> General Forms</a></li>
+                                    <li><a href='@Url.Action("Index","validation")'><i class="fa fa-angle-right"></i> Form Validations</a></li>
                                 </ul>
                             </li>
                             <li class="treeview">
@@ -172,7 +175,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="http://localhost:65403/Admin/tables/Index"><i class="fa fa-angle-right"></i> Simple tables</a></li>
+                                    
+                                    <li><a href='@Url.Action("Index","tables")'><i class="fa fa-angle-right"></i> Simple tables</a></li>
                                 </ul>
                             </li>
                             <li class="treeview">
@@ -181,8 +185,9 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <i class="fa fa-angle-left pull-right"></i><small class="label pull-right label-info1">08</small><span class="label label-primary1 pull-right">02</span>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="http://localhost:65403/Admin/Inbox/Index"><i class="fa fa-angle-right"></i> Mail Inbox </a></li>
-                                    <li><a href="http://localhost:65403/Admin/Compose/Index"><i class="fa fa-angle-right"></i> Compose Mail </a></li>
+
+                                    <li><a href='@Url.Action("Index","Inbox")'><i class="fa fa-angle-right"></i> Mail Inbox </a></li>
+                                    <li><a href='@Url.Action("Index","Compose/")'><i class="fa fa-angle-right"></i> Compose Mail </a></li>
                                 </ul>
                             </li>
                             <li class="treeview">
@@ -191,11 +196,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="http://localhost:65403/Admin/Login/Index"><i class="fa fa-angle-right"></i> Login</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Login/Index"><i class="fa fa-angle-right"></i> Register</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Erro404/Index"><i class="fa fa-angle-right"></i> 404 Error</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Error505/Index"><i class="fa fa-angle-right"></i> 500 Error</a></li>
-                                    <li><a href="http://localhost:65403/Admin/Blank_Page/Index"><i class="fa fa-angle-right"></i> Blank Page</a></li>
+
+                                    <li><a href='@Url.Action("Index","Login")'><i class="fa fa-angle-right"></i> Login</a></li>
+                                    <li><a href='@Url.Action("Index","Register")'><i class="fa fa-angle-right"></i> Register</a></li>
+                                    <li><a href='@Url.Action("Index","Erro404")'><i class="fa fa-angle-right"></i> 404 Error</a></li>
+                                    <li><a href='@Url.Action("Index","Error505")'><i class="fa fa-angle-right"></i> 500 Error</a></li>
+                                    <li><a href='@Url.Action("Index","Blank_Page")'><i class="fa fa-angle-right"></i> Blank Page</a></li>
                                 </ul>
                             </li>
                             <li class="header">LABELS</li>
