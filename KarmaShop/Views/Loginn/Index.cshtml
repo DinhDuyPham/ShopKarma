@@ -27,15 +27,17 @@
                     <!-- login -->
                     <div class="login-contect py-5">
                            
-                                
+                                @using (Html.BeginForm("index", "Login", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
                                     <form action="#" method="post">
                                         <div class="form-group">
                                             <label>Your Name</label>
-                                            <input type="text" class="form-control" name="name" placeholder="" required="">
+                                            @Html.TextBox("Acc","", new { @class = "form-control", @placeholder = "User"})
                                         </div>
                                         <div class="form-group">
-                                            <label class="mb-2">Password</label>
-                                            <input type="password" class="form-control" name="password" placeholder="" required="">
+                                            <label class="mb-2">Password</label>                                          
+                                            @Html.Password("Pass","" , new {@class = "form-control" ,@placeholder ="Password"})
                                         </div>
                                         <button type="submit" class="btn submit mb-4">Login</button>
                                         <p class="forgot-w3ls text-center mb-3">
@@ -46,9 +48,9 @@
                                             <a href="register.html">Create one now</a>
                                         </p>
                                     </form>
-                                
-                         
-                        
+
+                                }
+
                     </div>
                     <!-- //login -->
                 </div>

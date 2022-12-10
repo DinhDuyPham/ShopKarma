@@ -154,18 +154,18 @@
     <Compile Include="Areas\Admin\Controllers\TypograbphyController.cs" />
     <Compile Include="Areas\Admin\Controllers\validationController.cs" />
     <Compile Include="Areas\Admin\Controllers\WidgetsController.cs" />
-    <Compile Include="Controllers\Blog\BlogController.cs" />
-    <Compile Include="Controllers\Blog\BlogDetailsController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\BlogDetailsController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\Pages\LoginnController.cs" />
-    <Compile Include="Controllers\Pages\ElementController.cs" />
-    <Compile Include="Controllers\Pages\TrackingController.cs" />
-    <Compile Include="Controllers\Shop\ComfirmationController.cs" />
+    <Compile Include="Controllers\LoginnController.cs" />
+    <Compile Include="Controllers\ElementController.cs" />
+    <Compile Include="Controllers\TrackingController.cs" />
+    <Compile Include="Controllers\ComfirmationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Shop\ProductCheckoutController.cs" />
-    <Compile Include="Controllers\Shop\ProductDetailsController.cs" />
-    <Compile Include="Controllers\Shop\ShopCategoryController.cs" />
-    <Compile Include="Controllers\Shop\ShoppingCartController.cs" />
+    <Compile Include="Controllers\ProductCheckoutController.cs" />
+    <Compile Include="Controllers\ProductDetailsController.cs" />
+    <Compile Include="Controllers\ShopCategoryController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -771,7 +771,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Views\DHome\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
