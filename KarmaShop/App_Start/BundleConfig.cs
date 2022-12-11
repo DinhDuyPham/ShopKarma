@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace KarmaShop
+namespace KarmaShop.App_Start
 {
     public class BundleConfig
     {
@@ -26,7 +26,7 @@ namespace KarmaShop
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
             //Add style to bundles for private pages...
-            bundles.Add(new StyleBundle("~/bundles/css2").Include("~/Areas/Admin/Contenss/css/animate.css",
+            bundles.Add(new StyleBundle("~/bundles/css1").Include("~/Areas/Admin/Contenss/css/animate.css",
                                                                     "~/Areas/Admin/Contenss/css/bootstrap.css",
                                                                     "~/Areas/Admin/Contenss/css/custom.css",
                                                                     "~/Areas/Admin/Contenss/css/export.css",
@@ -50,7 +50,7 @@ namespace KarmaShop
                                                                     "~/Content/css/nice-select.css",
                                                                     "~/Content/css/nouislider.min.css",
                                                                     "~/Content/css/owl.carousel.css",
-                                                                    "~/Content/css/themify-icons.css"));
+                                                                    "~/Content/css/themify-icons.css" ));
             //Add scrip to the bundle for private pages...
             bundles.Add(new StyleBundle("~/bundles/js1").Include("~/Areas/Admin/Contenss/js/amcharts.js",
                                                                 "~/Areas/Admin/Contenss/js/bootstrap.js",
@@ -81,6 +81,21 @@ namespace KarmaShop
                                                                 "~/Areas/Admin/Contenss/js/utils.js",
                                                                 "~/Areas/Admin/Contenss/js/validator.min.js"));
 
+            //Add scrips to the bundles for public pages ...
+            bundles.Add(new StyleBundle("~/bundles/js2").Include("~/Content/js/vendor/bootstrap.min.js",
+                                                                "~/Content/js/vendor/jquery-2.2.4.min.js",
+                                                                "~/Content/js/vendor/popper.js",
+                                                                "~/Content/js/countdown.js",
+                                                                "~/Content/js/gmaps.min.js",
+                                                                "~/Content/js/ion.rangeSlider.js",
+                                                                "~/Content/js/jquery.ajaxchimp.min.js",
+                                                                "~/Content/js/jquery.magnific-popup.min.js",
+                                                                "~/Content/js/jquery.nice-select.min.js",
+                                                                "~/Content/js/jquery.sticky.js",
+                                                                "~/Content/js/main.js",
+                                                                "~/Content/js/nouislider.min.js",
+                                                                "~/Content/js/owl.carousel.min.js",
+                                                                "~/Content/js/parallax.min.js"));
 
         }
     }
