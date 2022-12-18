@@ -105,7 +105,7 @@
           <Property Name="TYPE_NAME" Type="nvarchar" MaxLength="88" Nullable="false" />
           <Property Name="NOTE" Type="ntext" />
         </EntityType>
-        <Association Name="FK__ARTICLES__ACCOUN__3E52440B">
+        <Association Name="FK__ARTICLES__ACCOUN__2C3393D0">
           <End Role="LOGIN" Type="Self.LOGIN" Multiplicity="1" />
           <End Role="ARTICLES" Type="Self.ARTICLES" Multiplicity="*" />
           <ReferentialConstraint>
@@ -117,7 +117,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__BRANDS__TYPE_COD__59FA5E80">
+        <Association Name="FK__BRANDS__TYPE_COD__47DBAE45">
           <End Role="TYPE_OF_PRODUCTS" Type="Self.TYPE_OF_PRODUCTS" Multiplicity="1" />
           <End Role="BRANDS" Type="Self.BRANDS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -129,7 +129,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERDETA__ORDER__5629CD9C">
+        <Association Name="FK__ORDERDETA__ORDER__440B1D61">
           <End Role="ORDERS" Type="Self.ORDERS" Multiplicity="1" />
           <End Role="ORDERDETAILS" Type="Self.ORDERDETAILS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -141,7 +141,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERDETA__PRODU__571DF1D5">
+        <Association Name="FK__ORDERDETA__PRODU__44FF419A">
           <End Role="PRODUCTS" Type="Self.PRODUCTS" Multiplicity="1" />
           <End Role="ORDERDETAILS" Type="Self.ORDERDETAILS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -153,7 +153,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERS__ACCOUNT__52593CB8">
+        <Association Name="FK__ORDERS__ACCOUNT__403A8C7D">
           <End Role="LOGIN" Type="Self.LOGIN" Multiplicity="1" />
           <End Role="ORDERS" Type="Self.ORDERS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -165,7 +165,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERS__CUSTOMER__5165187F">
+        <Association Name="FK__ORDERS__CUSTOMER__3F466844">
           <End Role="CUSTOMERS" Type="Self.CUSTOMERS" Multiplicity="1" />
           <End Role="ORDERS" Type="Self.ORDERS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -177,7 +177,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTS__ACCOUN__48CFD27E">
+        <Association Name="FK__PRODUCTS__ACCOUN__36B12243">
           <End Role="LOGIN" Type="Self.LOGIN" Multiplicity="1" />
           <End Role="PRODUCTS" Type="Self.PRODUCTS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -189,7 +189,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTS__TYPE_C__46E78A0C">
+        <Association Name="FK__PRODUCTS__TYPE_C__34C8D9D1">
           <End Role="TYPE_OF_PRODUCTS" Type="Self.TYPE_OF_PRODUCTS" Multiplicity="1" />
           <End Role="PRODUCTS" Type="Self.PRODUCTS" Multiplicity="*" />
           <ReferentialConstraint>
@@ -210,35 +210,35 @@
           <EntitySet Name="ORDERS" EntityType="Self.ORDERS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PRODUCTS" EntityType="Self.PRODUCTS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TYPE_OF_PRODUCTS" EntityType="Self.TYPE_OF_PRODUCTS" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__ARTICLES__ACCOUN__3E52440B" Association="Self.FK__ARTICLES__ACCOUN__3E52440B">
+          <AssociationSet Name="FK__ARTICLES__ACCOUN__2C3393D0" Association="Self.FK__ARTICLES__ACCOUN__2C3393D0">
             <End Role="LOGIN" EntitySet="LOGIN" />
             <End Role="ARTICLES" EntitySet="ARTICLES" />
           </AssociationSet>
-          <AssociationSet Name="FK__BRANDS__TYPE_COD__59FA5E80" Association="Self.FK__BRANDS__TYPE_COD__59FA5E80">
+          <AssociationSet Name="FK__BRANDS__TYPE_COD__47DBAE45" Association="Self.FK__BRANDS__TYPE_COD__47DBAE45">
             <End Role="TYPE_OF_PRODUCTS" EntitySet="TYPE_OF_PRODUCTS" />
             <End Role="BRANDS" EntitySet="BRANDS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERDETA__ORDER__5629CD9C" Association="Self.FK__ORDERDETA__ORDER__5629CD9C">
+          <AssociationSet Name="FK__ORDERDETA__ORDER__440B1D61" Association="Self.FK__ORDERDETA__ORDER__440B1D61">
             <End Role="ORDERS" EntitySet="ORDERS" />
             <End Role="ORDERDETAILS" EntitySet="ORDERDETAILS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERDETA__PRODU__571DF1D5" Association="Self.FK__ORDERDETA__PRODU__571DF1D5">
+          <AssociationSet Name="FK__ORDERDETA__PRODU__44FF419A" Association="Self.FK__ORDERDETA__PRODU__44FF419A">
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
             <End Role="ORDERDETAILS" EntitySet="ORDERDETAILS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERS__ACCOUNT__52593CB8" Association="Self.FK__ORDERS__ACCOUNT__52593CB8">
+          <AssociationSet Name="FK__ORDERS__ACCOUNT__403A8C7D" Association="Self.FK__ORDERS__ACCOUNT__403A8C7D">
             <End Role="LOGIN" EntitySet="LOGIN" />
             <End Role="ORDERS" EntitySet="ORDERS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERS__CUSTOMER__5165187F" Association="Self.FK__ORDERS__CUSTOMER__5165187F">
+          <AssociationSet Name="FK__ORDERS__CUSTOMER__3F466844" Association="Self.FK__ORDERS__CUSTOMER__3F466844">
             <End Role="CUSTOMERS" EntitySet="CUSTOMERS" />
             <End Role="ORDERS" EntitySet="ORDERS" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTS__ACCOUN__48CFD27E" Association="Self.FK__PRODUCTS__ACCOUN__48CFD27E">
+          <AssociationSet Name="FK__PRODUCTS__ACCOUN__36B12243" Association="Self.FK__PRODUCTS__ACCOUN__36B12243">
             <End Role="LOGIN" EntitySet="LOGIN" />
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTS__TYPE_C__46E78A0C" Association="Self.FK__PRODUCTS__TYPE_C__46E78A0C">
+          <AssociationSet Name="FK__PRODUCTS__TYPE_C__34C8D9D1" Association="Self.FK__PRODUCTS__TYPE_C__34C8D9D1">
             <End Role="TYPE_OF_PRODUCTS" EntitySet="TYPE_OF_PRODUCTS" />
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
           </AssociationSet>
@@ -261,7 +261,7 @@
           <Property Name="CONTENT" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
           <Property Name="ACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="APPROVED" Type="Boolean" />
-          <NavigationProperty Name="LOGIN" Relationship="Self.FK__ARTICLES__ACCOUN__3E52440B" FromRole="ARTICLES" ToRole="LOGIN" />
+          <NavigationProperty Name="LOGIN" Relationship="Self.FK__ARTICLES__ACCOUN__2C3393D0" FromRole="ARTICLES" ToRole="LOGIN" />
         </EntityType>
         <EntityType Name="BRAND">
           <Key>
@@ -270,7 +270,7 @@
           <Property Name="BRAND_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BRAND_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="TYPE_CODE" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="TYPE_OF_PRODUCTS" Relationship="Self.FK__BRANDS__TYPE_COD__59FA5E80" FromRole="BRANDS" ToRole="TYPE_OF_PRODUCTS" />
+          <NavigationProperty Name="TYPE_OF_PRODUCTS" Relationship="Self.FK__BRANDS__TYPE_COD__47DBAE45" FromRole="BRANDS" ToRole="TYPE_OF_PRODUCTS" />
         </EntityType>
         <EntityType Name="CUSTOMER">
           <Key>
@@ -284,7 +284,7 @@
           <Property Name="DATE_OF_BIRTH" Type="DateTime" Precision="3" />
           <Property Name="SEX" Type="Boolean" />
           <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="ORDERS" Relationship="Self.FK__ORDERS__CUSTOMER__5165187F" FromRole="CUSTOMERS" ToRole="ORDERS" />
+          <NavigationProperty Name="ORDERS" Relationship="Self.FK__ORDERS__CUSTOMER__3F466844" FromRole="CUSTOMERS" ToRole="ORDERS" />
         </EntityType>
         <EntityType Name="LOGIN">
           <Key>
@@ -300,9 +300,9 @@
           <Property Name="ADDRESS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="STATUS" Type="Boolean" />
           <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="ARTICLES" Relationship="Self.FK__ARTICLES__ACCOUN__3E52440B" FromRole="LOGIN" ToRole="ARTICLES" />
-          <NavigationProperty Name="ORDERS" Relationship="Self.FK__ORDERS__ACCOUNT__52593CB8" FromRole="LOGIN" ToRole="ORDERS" />
-          <NavigationProperty Name="PRODUCTS" Relationship="Self.FK__PRODUCTS__ACCOUN__48CFD27E" FromRole="LOGIN" ToRole="PRODUCTS" />
+          <NavigationProperty Name="ARTICLES" Relationship="Self.FK__ARTICLES__ACCOUN__2C3393D0" FromRole="LOGIN" ToRole="ARTICLES" />
+          <NavigationProperty Name="ORDERS" Relationship="Self.FK__ORDERS__ACCOUNT__403A8C7D" FromRole="LOGIN" ToRole="ORDERS" />
+          <NavigationProperty Name="PRODUCTS" Relationship="Self.FK__PRODUCTS__ACCOUN__36B12243" FromRole="LOGIN" ToRole="PRODUCTS" />
         </EntityType>
         <EntityType Name="ORDERDETAIL">
           <Key>
@@ -314,8 +314,8 @@
           <Property Name="QUANTUM" Type="Int32" />
           <Property Name="PRICE" Type="Int64" />
           <Property Name="SALE" Type="Int64" />
-          <NavigationProperty Name="ORDER" Relationship="Self.FK__ORDERDETA__ORDER__5629CD9C" FromRole="ORDERDETAILS" ToRole="ORDERS" />
-          <NavigationProperty Name="PRODUCT" Relationship="Self.FK__ORDERDETA__PRODU__571DF1D5" FromRole="ORDERDETAILS" ToRole="PRODUCTS" />
+          <NavigationProperty Name="ORDER" Relationship="Self.FK__ORDERDETA__ORDER__440B1D61" FromRole="ORDERDETAILS" ToRole="ORDERS" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.FK__ORDERDETA__PRODU__44FF419A" FromRole="ORDERDETAILS" ToRole="PRODUCTS" />
         </EntityType>
         <EntityType Name="ORDER">
           <Key>
@@ -329,9 +329,9 @@
           <Property Name="DELIVERY_DATE" Type="DateTime" Precision="3" />
           <Property Name="SHIPPING_ADDRESS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="CUSTOMER" Relationship="Self.FK__ORDERS__CUSTOMER__5165187F" FromRole="ORDERS" ToRole="CUSTOMERS" />
-          <NavigationProperty Name="LOGIN" Relationship="Self.FK__ORDERS__ACCOUNT__52593CB8" FromRole="ORDERS" ToRole="LOGIN" />
-          <NavigationProperty Name="ORDERDETAILS" Relationship="Self.FK__ORDERDETA__ORDER__5629CD9C" FromRole="ORDERS" ToRole="ORDERDETAILS" />
+          <NavigationProperty Name="CUSTOMER" Relationship="Self.FK__ORDERS__CUSTOMER__3F466844" FromRole="ORDERS" ToRole="CUSTOMERS" />
+          <NavigationProperty Name="LOGIN" Relationship="Self.FK__ORDERS__ACCOUNT__403A8C7D" FromRole="ORDERS" ToRole="LOGIN" />
+          <NavigationProperty Name="ORDERDETAILS" Relationship="Self.FK__ORDERDETA__ORDER__440B1D61" FromRole="ORDERS" ToRole="ORDERDETAILS" />
         </EntityType>
         <EntityType Name="PRODUCT">
           <Key>
@@ -350,9 +350,9 @@
           <Property Name="PRICE" Type="Int32" />
           <Property Name="SALE" Type="Int32" />
           <Property Name="PRODUCER" Type="String" MaxLength="168" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="LOGIN" Relationship="Self.FK__PRODUCTS__ACCOUN__48CFD27E" FromRole="PRODUCTS" ToRole="LOGIN" />
-          <NavigationProperty Name="ORDERDETAILS" Relationship="Self.FK__ORDERDETA__PRODU__571DF1D5" FromRole="PRODUCTS" ToRole="ORDERDETAILS" />
-          <NavigationProperty Name="TYPE_OF_PRODUCTS" Relationship="Self.FK__PRODUCTS__TYPE_C__46E78A0C" FromRole="PRODUCTS" ToRole="TYPE_OF_PRODUCTS" />
+          <NavigationProperty Name="LOGIN" Relationship="Self.FK__PRODUCTS__ACCOUN__36B12243" FromRole="PRODUCTS" ToRole="LOGIN" />
+          <NavigationProperty Name="ORDERDETAILS" Relationship="Self.FK__ORDERDETA__PRODU__44FF419A" FromRole="PRODUCTS" ToRole="ORDERDETAILS" />
+          <NavigationProperty Name="TYPE_OF_PRODUCTS" Relationship="Self.FK__PRODUCTS__TYPE_C__34C8D9D1" FromRole="PRODUCTS" ToRole="TYPE_OF_PRODUCTS" />
         </EntityType>
         <EntityType Name="TYPE_OF_PRODUCTS">
           <Key>
@@ -361,10 +361,10 @@
           <Property Name="TYPE_CODE" Type="Int32" Nullable="false" />
           <Property Name="TYPE_NAME" Type="String" MaxLength="88" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="BRANDS" Relationship="Self.FK__BRANDS__TYPE_COD__59FA5E80" FromRole="TYPE_OF_PRODUCTS" ToRole="BRANDS" />
-          <NavigationProperty Name="PRODUCTS" Relationship="Self.FK__PRODUCTS__TYPE_C__46E78A0C" FromRole="TYPE_OF_PRODUCTS" ToRole="PRODUCTS" />
+          <NavigationProperty Name="BRANDS" Relationship="Self.FK__BRANDS__TYPE_COD__47DBAE45" FromRole="TYPE_OF_PRODUCTS" ToRole="BRANDS" />
+          <NavigationProperty Name="PRODUCTS" Relationship="Self.FK__PRODUCTS__TYPE_C__34C8D9D1" FromRole="TYPE_OF_PRODUCTS" ToRole="PRODUCTS" />
         </EntityType>
-        <Association Name="FK__ARTICLES__ACCOUN__3E52440B">
+        <Association Name="FK__ARTICLES__ACCOUN__2C3393D0">
           <End Role="LOGIN" Type="Self.LOGIN" Multiplicity="1" />
           <End Role="ARTICLES" Type="Self.ARTICLE" Multiplicity="*" />
           <ReferentialConstraint>
@@ -376,7 +376,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__BRANDS__TYPE_COD__59FA5E80">
+        <Association Name="FK__BRANDS__TYPE_COD__47DBAE45">
           <End Role="TYPE_OF_PRODUCTS" Type="Self.TYPE_OF_PRODUCTS" Multiplicity="1" />
           <End Role="BRANDS" Type="Self.BRAND" Multiplicity="*" />
           <ReferentialConstraint>
@@ -388,7 +388,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERS__CUSTOMER__5165187F">
+        <Association Name="FK__ORDERS__CUSTOMER__3F466844">
           <End Role="CUSTOMERS" Type="Self.CUSTOMER" Multiplicity="1" />
           <End Role="ORDERS" Type="Self.ORDER" Multiplicity="*" />
           <ReferentialConstraint>
@@ -400,7 +400,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERS__ACCOUNT__52593CB8">
+        <Association Name="FK__ORDERS__ACCOUNT__403A8C7D">
           <End Role="LOGIN" Type="Self.LOGIN" Multiplicity="1" />
           <End Role="ORDERS" Type="Self.ORDER" Multiplicity="*" />
           <ReferentialConstraint>
@@ -412,7 +412,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTS__ACCOUN__48CFD27E">
+        <Association Name="FK__PRODUCTS__ACCOUN__36B12243">
           <End Role="LOGIN" Type="Self.LOGIN" Multiplicity="1" />
           <End Role="PRODUCTS" Type="Self.PRODUCT" Multiplicity="*" />
           <ReferentialConstraint>
@@ -424,7 +424,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERDETA__ORDER__5629CD9C">
+        <Association Name="FK__ORDERDETA__ORDER__440B1D61">
           <End Role="ORDERS" Type="Self.ORDER" Multiplicity="1" />
           <End Role="ORDERDETAILS" Type="Self.ORDERDETAIL" Multiplicity="*" />
           <ReferentialConstraint>
@@ -436,7 +436,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ORDERDETA__PRODU__571DF1D5">
+        <Association Name="FK__ORDERDETA__PRODU__44FF419A">
           <End Role="PRODUCTS" Type="Self.PRODUCT" Multiplicity="1" />
           <End Role="ORDERDETAILS" Type="Self.ORDERDETAIL" Multiplicity="*" />
           <ReferentialConstraint>
@@ -448,7 +448,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__PRODUCTS__TYPE_C__46E78A0C">
+        <Association Name="FK__PRODUCTS__TYPE_C__34C8D9D1">
           <End Role="TYPE_OF_PRODUCTS" Type="Self.TYPE_OF_PRODUCTS" Multiplicity="1" />
           <End Role="PRODUCTS" Type="Self.PRODUCT" Multiplicity="*" />
           <ReferentialConstraint>
@@ -460,7 +460,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="shopEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="shopEntities4" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ARTICLES" EntityType="Self.ARTICLE" />
           <EntitySet Name="BRANDS" EntityType="Self.BRAND" />
           <EntitySet Name="CUSTOMERS" EntityType="Self.CUSTOMER" />
@@ -469,35 +469,35 @@
           <EntitySet Name="ORDERS" EntityType="Self.ORDER" />
           <EntitySet Name="PRODUCTS" EntityType="Self.PRODUCT" />
           <EntitySet Name="TYPE_OF_PRODUCTS" EntityType="Self.TYPE_OF_PRODUCTS" />
-          <AssociationSet Name="FK__ARTICLES__ACCOUN__3E52440B" Association="Self.FK__ARTICLES__ACCOUN__3E52440B">
+          <AssociationSet Name="FK__ARTICLES__ACCOUN__2C3393D0" Association="Self.FK__ARTICLES__ACCOUN__2C3393D0">
             <End Role="LOGIN" EntitySet="LOGINs" />
             <End Role="ARTICLES" EntitySet="ARTICLES" />
           </AssociationSet>
-          <AssociationSet Name="FK__BRANDS__TYPE_COD__59FA5E80" Association="Self.FK__BRANDS__TYPE_COD__59FA5E80">
+          <AssociationSet Name="FK__BRANDS__TYPE_COD__47DBAE45" Association="Self.FK__BRANDS__TYPE_COD__47DBAE45">
             <End Role="TYPE_OF_PRODUCTS" EntitySet="TYPE_OF_PRODUCTS" />
             <End Role="BRANDS" EntitySet="BRANDS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERS__CUSTOMER__5165187F" Association="Self.FK__ORDERS__CUSTOMER__5165187F">
+          <AssociationSet Name="FK__ORDERS__CUSTOMER__3F466844" Association="Self.FK__ORDERS__CUSTOMER__3F466844">
             <End Role="CUSTOMERS" EntitySet="CUSTOMERS" />
             <End Role="ORDERS" EntitySet="ORDERS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERS__ACCOUNT__52593CB8" Association="Self.FK__ORDERS__ACCOUNT__52593CB8">
+          <AssociationSet Name="FK__ORDERS__ACCOUNT__403A8C7D" Association="Self.FK__ORDERS__ACCOUNT__403A8C7D">
             <End Role="LOGIN" EntitySet="LOGINs" />
             <End Role="ORDERS" EntitySet="ORDERS" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTS__ACCOUN__48CFD27E" Association="Self.FK__PRODUCTS__ACCOUN__48CFD27E">
+          <AssociationSet Name="FK__PRODUCTS__ACCOUN__36B12243" Association="Self.FK__PRODUCTS__ACCOUN__36B12243">
             <End Role="LOGIN" EntitySet="LOGINs" />
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERDETA__ORDER__5629CD9C" Association="Self.FK__ORDERDETA__ORDER__5629CD9C">
+          <AssociationSet Name="FK__ORDERDETA__ORDER__440B1D61" Association="Self.FK__ORDERDETA__ORDER__440B1D61">
             <End Role="ORDERS" EntitySet="ORDERS" />
             <End Role="ORDERDETAILS" EntitySet="ORDERDETAILS" />
           </AssociationSet>
-          <AssociationSet Name="FK__ORDERDETA__PRODU__571DF1D5" Association="Self.FK__ORDERDETA__PRODU__571DF1D5">
+          <AssociationSet Name="FK__ORDERDETA__PRODU__44FF419A" Association="Self.FK__ORDERDETA__PRODU__44FF419A">
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
             <End Role="ORDERDETAILS" EntitySet="ORDERDETAILS" />
           </AssociationSet>
-          <AssociationSet Name="FK__PRODUCTS__TYPE_C__46E78A0C" Association="Self.FK__PRODUCTS__TYPE_C__46E78A0C">
+          <AssociationSet Name="FK__PRODUCTS__TYPE_C__34C8D9D1" Association="Self.FK__PRODUCTS__TYPE_C__34C8D9D1">
             <End Role="TYPE_OF_PRODUCTS" EntitySet="TYPE_OF_PRODUCTS" />
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
           </AssociationSet>
@@ -507,7 +507,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="shopModelStoreContainer" CdmEntityContainer="shopEntities2">
+        <EntityContainerMapping StorageEntityContainer="shopModelStoreContainer" CdmEntityContainer="shopEntities4">
           <EntitySetMapping Name="ARTICLES">
             <EntityTypeMapping TypeName="shopModel.ARTICLE">
               <MappingFragment StoreEntitySet="ARTICLES">

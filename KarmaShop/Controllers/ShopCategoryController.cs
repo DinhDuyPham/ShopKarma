@@ -11,7 +11,7 @@ namespace KarmaShop.Controllers
     public class ShopCategoryController : Controller
     {
         // GET: ShopCategory
-        shopEntities2 sa = new shopEntities2();
+        shopEntities4 sa = new shopEntities4();
         public ActionResult Index()
         {
             var type = sa.TYPE_OF_PRODUCTS.ToList();

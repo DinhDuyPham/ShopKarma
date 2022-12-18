@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using KarmaShop.Models;
 namespace KarmaShop.Controllers
 {
     public class LoginnController : Controller
@@ -18,10 +18,10 @@ namespace KarmaShop.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(string Acc, string Pass)
         {
-            bool isAuthentic = (Acc != null && Pass != null && ((Acc.ToLower().Equals("admin") && Pass.Equals("234")) || (Acc.ToLower().Equals("duy") && Pass.Equals("234"))));
+            LOGIN ttnd = new shopEntities4().LOGINs.Where(x => x.ACCOUNT.Equals(Acc.ToLower().Trim()) && x.PASSWORD.Equals(Pass)).First<LOGIN>();
+            bool isAuthentic =ttnd !=null && ttnd.ACCOUNT.Equals(Acc.ToLower().Trim())&& ttnd.PASSWORD.Equals(Pass);
             if (isAuthentic)
                 return RedirectToAction("Index","DashBoard",new { Area = "Admin" } );
-
 
             return View();
         }

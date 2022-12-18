@@ -11,7 +11,7 @@ namespace KarmaShop.Models
         public static List<PRODUCT> GetPRODUCTs()
         {
             List<PRODUCT> obj = new List<PRODUCT>();
-            DbContext cs = new DbContext("name=shopEntities2");
+            DbContext cs = new DbContext("name=shopEntities4");
             obj = cs.Set<PRODUCT>().ToList<PRODUCT>();
             return obj;
         } 
@@ -21,12 +21,12 @@ namespace KarmaShop.Models
         /// <returns></returns>
         public static List<TYPE_OF_PRODUCTS> GetCategories()
         {
-            return new DbContext("name=shopEntities2").Set<TYPE_OF_PRODUCTS>().ToList<TYPE_OF_PRODUCTS>();
+            return new DbContext("name=shopEntities4").Set<TYPE_OF_PRODUCTS>().ToList<TYPE_OF_PRODUCTS>();
         }
 
         public static List<PRODUCT> SetCategories()
         {
-            return new DbContext("name=shopEntities2").Set<PRODUCT>().ToList<PRODUCT>();
+            return new DbContext("name=shopEntities4").Set<PRODUCT>().ToList<PRODUCT>();
         }
 
 

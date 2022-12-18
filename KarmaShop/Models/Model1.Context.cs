@@ -13,10 +13,10 @@ namespace KarmaShop.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class shopEntities2 : DbContext
+    public partial class shopEntities4 : DbContext
     {
-        public shopEntities2()
-            : base("name=shopEntities2")
+        public shopEntities4()
+            : base("name=shopEntities4")
         {
         }
     
