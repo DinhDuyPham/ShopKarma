@@ -10,7 +10,6 @@ using KarmaShop.App_Start;
 
 
 
-
 namespace KarmaShop
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -21,6 +20,10 @@ namespace KarmaShop
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+        protected void Sesstion_Start(object sender,EventArgs e)
+        {
+            Session["ttDangNhap"] = null;
         }
     }
 }

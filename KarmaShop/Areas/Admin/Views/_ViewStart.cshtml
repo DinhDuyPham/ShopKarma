@@ -1,3 +1,9 @@
-﻿@{
+﻿@using KarmaShop.Models;
+
+@{
+    LOGIN x = (LOGIN) Session["ttDangNhap"];
+    if (x == null) {
+        Response.Redirect("~/loginn");
+    }
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
