@@ -711,6 +711,16 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-grid.css - Copy.map" />
+    <Content Include="Content\bootstrap-grid.min.css - Copy.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css - Copy.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css - Copy.map" />
+    <Content Include="Content\bootstrap-reboot.css - Copy.map" />
+    <Content Include="Content\bootstrap-reboot.min.css - Copy.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css - Copy.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css - Copy.map" />
+    <Content Include="Content\bootstrap-utilities.css - Copy.map" />
+    <Content Include="Content\bootstrap-utilities.min.css - Copy.map" />
     <Content Include="Areas\Admin\Contenss\fonts\fontawesome-webfont.eot" />
     <Content Include="Areas\Admin\Contenss\fonts\fontawesome-webfont.ttf" />
     <Content Include="Areas\Admin\Contenss\fonts\fontawesome-webfont.woff" />
@@ -742,16 +752,6 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Widgets\Index.cshtml" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
-    <Content Include="Content\bootstrap-grid.css - Copy.map" />
-    <Content Include="Content\bootstrap-grid.min.css - Copy.map" />
-    <Content Include="Content\bootstrap-grid.rtl.css - Copy.map" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css - Copy.map" />
-    <Content Include="Content\bootstrap-reboot.css - Copy.map" />
-    <Content Include="Content\bootstrap-reboot.min.css - Copy.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.css - Copy.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css - Copy.map" />
-    <Content Include="Content\bootstrap-utilities.css - Copy.map" />
-    <Content Include="Content\bootstrap-utilities.min.css - Copy.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -789,7 +789,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

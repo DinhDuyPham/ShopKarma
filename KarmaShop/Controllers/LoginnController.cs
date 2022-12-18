@@ -18,10 +18,11 @@ namespace KarmaShop.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(string Acc, string Pass)
         {
-            bool isAuthentic = (Acc != null && Pass != null && ((Acc.ToLower().Equals("admin") && Pass.Equals("234")) || (Acc.ToLower().Equals("duy") && Pass.Equals("234")))) ;
+            bool isAuthentic = (Acc != null && Pass != null && ((Acc.ToLower().Equals("admin") && Pass.Equals("234")) || (Acc.ToLower().Equals("duy") && Pass.Equals("234"))));
             if (isAuthentic)
-                return View("~/Areas/Admin/Views/DashBoard/Index.cshtml");
-                           
+                return RedirectToAction("Index","DashBoard",new { Area = "Admin" } );
+
+
             return View();
         }
     }
