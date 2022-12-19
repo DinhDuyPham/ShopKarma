@@ -23,7 +23,7 @@ namespace KarmaShop.Models
                 byte[] sourceData = Encoding.UTF8.GetBytes(PlainText);
                 //---Compute Hash and return  a byte array----
                 byte[] hashResult = bb.ComputeHash(sourceData);
-                result = BitConverter.ToString(hashResult);
+                result = BitConverter.ToString(hashResult).Replace("-","");
             }
             return result;
         

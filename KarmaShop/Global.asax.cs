@@ -24,6 +24,7 @@ namespace KarmaShop
         protected void Sesstion_Start(object sender,EventArgs e)
         {
             Session["ttDangNhap"] = null;
+
         }
     }
 }

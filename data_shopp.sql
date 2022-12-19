@@ -1,12 +1,12 @@
-﻿create database shop
+﻿/*create database shop
 USE master
 use shop 
 go
-DROP DATABASE SHOP
+DROP DATABASE SHOP*/
 --1: tạo table login chứ thông tin của admin -----------------------------------
 create table LOGIN(
-	ACCOUNT				varchar(20) primary key,
-	PASSWORD			varchar(20) not null,
+	ACCOUNT				varchar(100) primary key,
+	PASSWORD			varchar(100) not null,
 	FULLNAME			nvarchar(100) NULL,
 	DATE_OF_BIRTH		datetime ,
 	SEX					bit default 1,
@@ -41,7 +41,7 @@ create table ARTICLES
 	DATE_SUBMITTED		datetime ,
 	TYPE_OF_NEWS		nvarchar(30),
 	CONTENT				nvarchar(4000),
-	ACCOUNT				varchar(20) not null ,
+	ACCOUNT				varchar(100) not null ,
 	APPROVED			bit default 0,
 						foreign key (ACCOUNT) references LOGIN(ACCOUNT) on update cascade 
 )
@@ -65,7 +65,7 @@ create table PRODUCTS
 	DATE_SUBMITTED		DATETIME			DEFAULT	CURRENT_TIMESTAMP,
 	TYPE_CODE			int		not null	FOREIGN KEY references	TYPE_OF_PRODUCTS(TYPE_CODE),
 	CONTENT				nvarchar(4000)		DEFAULT '',
-	ACCOUNT				varchar(20)			not null foreign key references LOGIN(ACCOUNT) on update cascade,
+	ACCOUNT				varchar(100)		not null foreign key references LOGIN(ACCOUNT) on update cascade,
 	dvt					nvarchar(32)		default N'Cái',
 	APPROVED			bit					default 0,
 	PRICE				INTEGER				DEFAULT 0,
@@ -73,12 +73,13 @@ create table PRODUCTS
 	PRODUCER			nvarchar(168)		default ''
 )
 go
+
 -- 6: Tạo Table [Orders] chứa danh sách đơn hàng mà khách đã đặt mua thông qua web ------------
 create table ORDERS
 (
 	ORDERS_NUMBER		varchar(10)				primary key not null ,
 	CUSTOMER_CODE		varchar(10) not null	foreign key references CUSTOMERS(CUSTOMER_CODE),
-	ACCOUNT				varchar(20) not null	foreign key references LOGIN(ACCOUNT) on update cascade ,
+	ACCOUNT				varchar(100) not null	foreign key references LOGIN(ACCOUNT) on update cascade ,
 	ORDER_DATE			datetime,
 	ACTIVATED			bit default 1,
 	DELIVERY_DATE		datetime,
