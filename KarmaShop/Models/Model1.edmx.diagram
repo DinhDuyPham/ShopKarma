@@ -5,14 +5,14 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="f68989c9c0124aa8b83e605a2dd7124c" Name="Diagram1">
-        <EntityTypeShape EntityType="shopModel.ARTICLE" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="shopModel.BRAND" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.ARTICLE" Width="1.5" PointX="3.5" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="shopModel.BRAND" Width="1.5" PointX="1.625" PointY="10.5" IsExpanded="true" />
         <EntityTypeShape EntityType="shopModel.CUSTOMER" Width="1.5" PointX="3.75" PointY="10.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="shopModel.LOGIN" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="shopModel.ORDERDETAIL" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.LOGIN" Width="1.5" PointX="4" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.ORDERDETAIL" Width="1.5" PointX="0.5" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="shopModel.ORDER" Width="1.5" PointX="6" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="shopModel.PRODUCT" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="shopModel.TYPE_OF_PRODUCTS" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.PRODUCT" Width="1.5" PointX="1.125" PointY="2.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="shopModel.TYPE_OF_PRODUCTS" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="false" />
         <AssociationConnector Association="shopModel.FK__ARTICLES__ACCOUN__2C3393D0" ManuallyRouted="false" />
         <AssociationConnector Association="shopModel.FK__BRANDS__TYPE_COD__47DBAE45" ManuallyRouted="false" />
         <AssociationConnector Association="shopModel.FK__ORDERS__CUSTOMER__3F466844" ManuallyRouted="false" />

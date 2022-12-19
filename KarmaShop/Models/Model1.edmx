@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="shopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="shopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ARTICLES">
           <Key>
             <PropertyRef Name="ARTICLES_CODE" />
@@ -16,7 +16,7 @@
           <Property Name="DATE_SUBMITTED" Type="datetime" />
           <Property Name="TYPE_OF_NEWS" Type="nvarchar" MaxLength="30" />
           <Property Name="CONTENT" Type="nvarchar" MaxLength="4000" />
-          <Property Name="ACCOUNT" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ACCOUNT" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="APPROVED" Type="bit" />
         </EntityType>
         <EntityType Name="BRANDS">
@@ -44,8 +44,8 @@
           <Key>
             <PropertyRef Name="ACCOUNT" />
           </Key>
-          <Property Name="ACCOUNT" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="PASSWORD" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ACCOUNT" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="FULLNAME" Type="nvarchar" MaxLength="100" />
           <Property Name="DATE_OF_BIRTH" Type="datetime" />
           <Property Name="SEX" Type="bit" />
@@ -72,7 +72,7 @@
           </Key>
           <Property Name="ORDERS_NUMBER" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="CUSTOMER_CODE" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="ACCOUNT" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ACCOUNT" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="ORDER_DATE" Type="datetime" />
           <Property Name="ACTIVATED" Type="bit" />
           <Property Name="DELIVERY_DATE" Type="datetime" />
@@ -90,7 +90,7 @@
           <Property Name="DATE_SUBMITTED" Type="datetime" />
           <Property Name="TYPE_CODE" Type="int" Nullable="false" />
           <Property Name="CONTENT" Type="nvarchar" MaxLength="4000" />
-          <Property Name="ACCOUNT" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ACCOUNT" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="dvt" Type="nvarchar" MaxLength="32" />
           <Property Name="APPROVED" Type="bit" />
           <Property Name="PRICE" Type="int" />
@@ -243,8 +243,7 @@
             <End Role="PRODUCTS" EntitySet="PRODUCTS" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="shopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -259,7 +258,7 @@
           <Property Name="DATE_SUBMITTED" Type="DateTime" Precision="3" />
           <Property Name="TYPE_OF_NEWS" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="CONTENT" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
-          <Property Name="ACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="APPROVED" Type="Boolean" />
           <NavigationProperty Name="LOGIN" Relationship="Self.FK__ARTICLES__ACCOUN__2C3393D0" FromRole="ARTICLES" ToRole="LOGIN" />
         </EntityType>
@@ -290,8 +289,8 @@
           <Key>
             <PropertyRef Name="ACCOUNT" />
           </Key>
-          <Property Name="ACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="PASSWORD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FULLNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="DATE_OF_BIRTH" Type="DateTime" Precision="3" />
           <Property Name="SEX" Type="Boolean" />
@@ -323,7 +322,7 @@
           </Key>
           <Property Name="ORDERS_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="CUSTOMER_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ORDER_DATE" Type="DateTime" Precision="3" />
           <Property Name="ACTIVATED" Type="Boolean" />
           <Property Name="DELIVERY_DATE" Type="DateTime" Precision="3" />
@@ -344,7 +343,7 @@
           <Property Name="DATE_SUBMITTED" Type="DateTime" Precision="3" />
           <Property Name="TYPE_CODE" Type="Int32" Nullable="false" />
           <Property Name="CONTENT" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
-          <Property Name="ACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dvt" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
           <Property Name="APPROVED" Type="Boolean" />
           <Property Name="PRICE" Type="Int32" />
